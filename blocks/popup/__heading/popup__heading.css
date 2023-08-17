@@ -1,22 +1,16 @@
-.elements {
-   max-width: 880px;
-   
-   margin: 0 auto;
-  padding-top: 50px;
-display: grid;
-row-gap: 20px;
-column-gap: 17px;
-grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
-
-
-
+.popup__heading {
+  font-family: Inter;
+  max-width: 330px;
+  max-height: 23px;
+  flex-shrink: 0;
+  font-size: 24px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+margin: 34px 64px 0 36px;
 }
 
-
-
-
-
-
+ 
 
 
 

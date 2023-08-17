@@ -1,18 +1,10 @@
-.elements {
-   max-width: 880px;
-   
-   margin: 0 auto;
-  padding-top: 50px;
-display: grid;
-row-gap: 20px;
-column-gap: 17px;
-grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+.footer {
 
+  max-width: 880px;
+  margin: 0 auto;
 
-
+padding: 67px 0 60px 0;
 }
-
-
 
 
 

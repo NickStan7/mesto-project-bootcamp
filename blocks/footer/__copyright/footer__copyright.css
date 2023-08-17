@@ -1,23 +1,16 @@
-.elements {
-   max-width: 880px;
-   
-   margin: 0 auto;
-  padding-top: 50px;
-display: grid;
-row-gap: 20px;
-column-gap: 17px;
-grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+.footer__copyright {
 
 
+  color: #545454;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+margin: 0;
 
 }
-
-
-
-
-
-
-
 
 
 

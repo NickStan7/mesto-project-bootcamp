@@ -1,0 +1,42 @@
+.popup__field1 {
+
+  width: 358px;
+  height: 14px;
+  flex-shrink: 0;
+  margin: 54px auto 54px auto;
+  border: none;
+  color: #000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position: relative;
+}
+
+.popup__field1::after {
+  content: "";
+  position: absolute;
+  bottom: -13px; /* Расположение снизу на 13 пикселей */
+margin: 0 auto;
+  width: 358px;
+  height: 1px;
+  opacity: 0.2;
+  background: #000 !important;
+}
+
+
+/**
+@media screen and (max-width: 768px) {
+  .header {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

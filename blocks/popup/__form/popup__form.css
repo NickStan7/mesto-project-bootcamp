@@ -1,22 +1,17 @@
-.elements {
-   max-width: 880px;
-   
-   margin: 0 auto;
-  padding-top: 50px;
-display: grid;
-row-gap: 20px;
-column-gap: 17px;
-grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
-
-
-
+.popup__form {
+ 
+ 
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+width: 430px;
+height: 330px;
+flex-shrink: 0;
 }
 
-
-
-
-
-
+ 
 
 
 

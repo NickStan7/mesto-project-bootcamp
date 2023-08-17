@@ -1,0 +1,32 @@
+.popup__content {
+  position: fixed; /* Позиционирование фиксированное, чтобы оставаться на месте при прокрутке */
+  top: 50%; /* Расположение сверху в середине */
+  left: 50%; /* Расположение слева в середине */
+  transform: translate(-50%, -50%); /* Центрирование попапа по центру */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+
+  padding: 0%;
+
+
+}
+
+
+
+
+/**
+@media screen and (max-width: 768px) {
+  .header {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
