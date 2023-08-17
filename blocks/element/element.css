@@ -1,0 +1,31 @@
+.element {
+   max-width: 282px;
+   height: 361px;
+background-color: white;
+border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/**
+@media screen and (max-width: 768px) {
+  .header {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

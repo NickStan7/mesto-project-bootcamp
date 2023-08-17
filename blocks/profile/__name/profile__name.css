@@ -1,0 +1,38 @@
+.profile__name {
+   
+  color: #FFF;
+font-family: Inter;
+font-size: 42px;
+font-style: normal;
+font-weight: 500;
+line-height: 48px; /* 114.286% */
+
+min-width: 294px;
+height: 39px;
+margin: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+/**
+@media screen and (max-width: 768px) {
+  .header {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

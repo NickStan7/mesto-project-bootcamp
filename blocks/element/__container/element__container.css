@@ -1,0 +1,30 @@
+.element__container {
+  display: flex;
+ justify-content: space-between;
+ margin: 25px 15px 31px 21px;
+ align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+/**
+@media screen and (max-width: 768px) {
+  .header {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

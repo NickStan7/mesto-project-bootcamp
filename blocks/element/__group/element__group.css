@@ -1,0 +1,38 @@
+.element__group {
+  width: 22px;
+  height: 19px;
+  background-color: white;
+  border: 1px solid black;
+  background-image: url(../../../images/Group.svg);
+  background-position: center;
+ 
+  background-repeat: no-repeat;
+  cursor: pointer;
+  align-self: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/**
+@media screen and (max-width: 768px) {
+  .header {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

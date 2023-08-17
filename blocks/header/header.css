@@ -1,0 +1,47 @@
+.header {
+
+  min-width: 320px;
+  max-width: 880px;
+  
+  
+  max-height: 74px;
+  padding-bottom: 41px;
+  position: relative;
+  margin: 0 auto;
+
+
+}
+
+.header::after {
+  content: ""; /* Создаем пустой псевдоэлемент */
+  display: block; /* Сделаем его блочным элементом */
+  position: absolute; /* Абсолютное позиционирование */
+  bottom: 2px; /* Выравниваем его снизу контейнера */
+  left: 0; /* По левому краю */
+  width: 100%; /* Ширина псевдоэлемента равна ширине контейнера */
+  height: 1px; /* Толщина линии */
+  background-color: #545454; /* Цвет фона линии */
+  opacity: 0.7; /* Прозрачность линии */
+}
+
+
+
+
+
+
+
+
+/**
+@media screen and (max-width: 768px) {
+  .header {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
