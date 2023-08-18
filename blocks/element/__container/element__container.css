@@ -1,32 +1,8 @@
 .element__container {
   display: flex;
- justify-content: space-between;
- margin: 25px 15px 0px 21px;
- align-self: center;
- align-items: center;
-
-}
-
-
-
-
-
-
-
-
-
-
-/**
-@media screen and (max-width: 768px) {
-  .header {
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .header {
-    padding-right: 16px;
-    padding-left: 16px;
-  }
+  justify-content: space-between;
+  margin: 25px 15px 0px 21px;
+  align-self: center;
+  align-items: center;
+  margin-bottom: 31px;
 }

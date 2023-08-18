@@ -1,37 +1,18 @@
 .popup__close {
-
- position: absolute;
- top: -40px; /* Отступ сверху на 8 пикселей */
+  position: absolute;
+  top: -40px; /* Отступ сверху на 8 пикселей */
   left: 438px; /* Отступ слева на 8 пикселей */
-
- width: 32px;
- height: 32px;
- background-color: rgba(0, 0, 0, 0);
- border: 0; 
- background-image: url(../../../images/Close\ Icon2.svg);
- background-position: center;
- background-repeat: no-repeat;
- cursor: pointer;
-
-
+  width: 32px;
+  height: 32px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  background-image: url(../../../images/Close\ Icon2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
- 
-
-
-
-
-/**
-@media screen and (max-width: 768px) {
-  .header {
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .header {
-    padding-right: 16px;
-    padding-left: 16px;
-  }
+.popup__close:hover {
+  transition: opacity 0.3s; /* Добавляем плавный переход для изменения прозрачности */
+  opacity: 0.6; /* Изменяем прозрачность при наведении */
 }

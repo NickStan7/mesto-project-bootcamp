@@ -1,5 +1,4 @@
 .profile__edit-button {
-   
   width: 24px;
   height: 24px;
   background-color: #000;
@@ -9,36 +8,27 @@
   background-size: 100%;
   background-repeat: no-repeat;
   cursor: pointer;
-  align-self: end;
   margin-left: 18px;
+  align-self: center;
 }
 
-
 .profile__edit-button:hover {
-  
   transition: opacity 0.3s; /* Добавляем плавный переход для изменения прозрачности */
   opacity: 0.6; /* Изменяем прозрачность при наведении */
 }
 
-
-
-
-
-
-
-
-
-/**
-@media screen and (max-width: 768px) {
-  .header {
-    padding-right: 24px;
-    padding-left: 24px;
+@media screen and (max-width: 945px) {
+  .profile__edit-button {
+    width: 20px;
+    height: 20px;
   }
 }
 
-@media screen and (max-width: 320px) {
-  .header {
-    padding-right: 16px;
-    padding-left: 16px;
+@media screen and (max-width: 440px) {
+  .profile__edit-button {
+    margin-left: 10px;
+
+    width: 18px;
+    height: 18px;
   }
 }

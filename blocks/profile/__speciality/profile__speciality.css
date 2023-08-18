@@ -1,6 +1,5 @@
 .profile__speciality {
-   
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
@@ -11,28 +10,23 @@
   flex-shrink: 0;
   margin-top: 16px;
   margin-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 500px;
 }
 
-
-
-
-
-
-
-
-
-
-/**
-@media screen and (max-width: 768px) {
-  .header {
-    padding-right: 24px;
-    padding-left: 24px;
+@media screen and (max-width: 945px) {
+  .profile__speciality {
+    text-align: center;
+    max-width: 280px;
   }
 }
 
-@media screen and (max-width: 320px) {
-  .header {
-    padding-right: 16px;
-    padding-left: 16px;
+@media screen and (max-width: 440px) {
+  .profile__speciality {
+    font-size: 14px;
+    margin-left: -25px;
+    margin-top: 14px;
   }
 }

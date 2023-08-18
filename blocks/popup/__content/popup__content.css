@@ -7,26 +7,5 @@
   padding: 20px;
   border-radius: 10px;
   z-index: 1000;
-
   padding: 0%;
-
-
-}
-
-
-
-
-/**
-@media screen and (max-width: 768px) {
-  .header {
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .header {
-    padding-right: 16px;
-    padding-left: 16px;
-  }
 }

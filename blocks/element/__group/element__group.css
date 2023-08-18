@@ -1,52 +1,24 @@
 .element__group {
-  width: 22px;
-  height: 19px;
+  max-width: 22px;
+  max-height: 19px;
   background-color: white;
   border: 0;
   background-image: url(../../../images/Group.svg);
   background-position: center;
- 
   background-repeat: no-repeat;
   cursor: pointer;
   align-self: center;
   margin: 5px 5px 1px 0;
   position: relative;
-
 }
 
-
 .element__group:hover {
-  
   transition: opacity 0.3s; /* Добавляем плавный переход для изменения прозрачности */
   opacity: 0.5; /* Изменяем прозрачность при наведении */
-  
 }
 
 .element__group:active {
   background-image: url(../../../images/Union.svg);
-  fill:black;
+  fill: black;
   opacity: 1; /* Изменяем прозрачность при наведении */
-}
-
-
-
-
-
-
-
-
-
-/**
-@media screen and (max-width: 768px) {
-  .header {
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .header {
-    padding-right: 16px;
-    padding-left: 16px;
-  }
 }

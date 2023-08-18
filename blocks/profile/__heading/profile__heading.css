@@ -1,33 +1,11 @@
 .profile__heading {
-   
-  
-display: flex;
-flex-direction: row;
-align-items: center;
-
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-/**
-@media screen and (max-width: 768px) {
-  .header {
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .header {
-    padding-right: 16px;
-    padding-left: 16px;
+@media screen and (max-width: 440px) {
+  .profile__heading {
+    margin: 0 auto;
   }
 }

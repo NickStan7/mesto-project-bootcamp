@@ -1,47 +1,26 @@
 .header {
-
-  min-width: 320px;
   max-width: 880px;
-  
-  
   max-height: 74px;
   padding-bottom: 41px;
   position: relative;
   margin: 0 auto;
-
-
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
 }
 
-.header::after {
-  content: ""; /* Создаем пустой псевдоэлемент */
-  display: block; /* Сделаем его блочным элементом */
-  position: absolute; /* Абсолютное позиционирование */
-  bottom: 2px; /* Выравниваем его снизу контейнера */
-  left: 0; /* По левому краю */
-  width: 100%; /* Ширина псевдоэлемента равна ширине контейнера */
-  height: 1px; /* Толщина линии */
-  background-color: #545454; /* Цвет фона линии */
-  opacity: 0.7; /* Прозрачность линии */
-}
-
-
-
-
-
-
-
-
-/**
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 945px) {
   .header {
-    padding-right: 24px;
-    padding-left: 24px;
+    max-width: 600px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 700px) {
   .header {
-    padding-right: 16px;
-    padding-left: 16px;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .header {
+    padding-bottom: 26.6px;
   }
 }

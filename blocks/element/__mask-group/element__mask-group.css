@@ -1,33 +1,8 @@
 .element__mask-group {
-   max-width: 282px;
-   border-radius: 10px 10px 0 0;
-   object-fit: cover;
+  max-width: 282px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
   margin: 0;
   border: none;
   vertical-align: middle;
-
-}
-
-
-
-
-
-
-
-
-
-
-/**
-@media screen and (max-width: 768px) {
-  .header {
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .header {
-    padding-right: 16px;
-    padding-left: 16px;
-  }
 }
