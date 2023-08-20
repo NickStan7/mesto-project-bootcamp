@@ -1,12 +1,15 @@
 .element {
-  max-width: 282px;
-  max-height: 361px;
-  background-color: white;
-  border-radius: 10px;
+   max-width: 282px;
+
+background-color: white;
+border-radius: 10px;
+
 }
 
+
 @media screen and (max-width: 700px) {
-  .element {
-    margin: 0 auto;
+  .element{
+   
+   margin: 0 auto;
   }
 }

@@ -6,8 +6,8 @@
     <title>Место</title>
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
-  <body>
-    <div class="page">
+  <body class="page">
+    <div>
       <header class="header">
         <img
           src="./images/logo.svg"
@@ -25,9 +25,9 @@
           />
           <div class="profile__info">
             <div class="profile__heading">
-              <div class="profile__name-container">
+              
                 <h1 class="profile__name">Жак-Ив Кусто</h1>
-              </div>
+            
               <button type="button" class="profile__edit-button"></button>
             </div>
 
@@ -40,72 +40,72 @@
           <article class="element">
             <img
               src="./images/kirill-pershin-1088404-unsplash.jpg"
-              alt="изображение Карачаевска"
-              class="element__mask-group"
+              alt="Карачаевск"
+              class="element__image"
             />
             <div class="element__container">
               <h2 class="element__heading">Карачаевск</h2>
-              <button type="button" class="element__group"></button>
+              <button type="button" class="element__button"></button>
             </div>
           </article>
 
           <article class="element">
             <img
               src="./images/elbrus.jpg"
-              alt="изображение горы Эльбрус"
-              class="element__mask-group"
+              alt="гора Эльбрус"
+              class="element__image"
             />
             <div class="element__container">
               <h2 class="element__heading">Гора Эльбрус</h2>
-              <button type="button" class="element__group"></button>
+              <button type="button" class="element__button"></button>
             </div>
           </article>
 
           <article class="element">
             <img
               src="./images/dombaq.jpg"
-              alt="изображение Домбая"
-              class="element__mask-group"
+              alt="Домбай"
+              class="element__image"
             />
             <div class="element__container">
               <h2 class="element__heading">Домбай</h2>
-              <button type="button" class="element__group"></button>
+              <button type="button" class="element__button"></button>
             </div>
           </article>
 
           <article class="element">
             <img
               src="./images/elbrus2.jpg"
-              alt="изображение горы Эльбрус"
-              class="element__mask-group"
+              alt="гора Эльбрус"
+              class="element__image"
             />
             <div class="element__container">
               <h2 class="element__heading">Гора Эльбрус</h2>
-              <button type="button" class="element__group"></button>
+              <button type="button" class="element__button"></button>
             </div>
           </article>
 
           <article class="element">
             <img
               src="./images/dombai2.jpg"
-              alt="изображение Домбая"
-              class="element__mask-group"
+              alt="Домбай"
+              class="element__image"
             />
             <div class="element__container">
               <h2 class="element__heading">Домбай</h2>
-              <button type="button" class="element__group"></button>
+              <button type="button" class="element__button"></button>
             </div>
           </article>
 
           <article class="element">
             <img
               src="./images/karachaevo.png"
-              alt="изображение Карачаевска"
-              class="element__mask-group"
+              alt="Карачаевск"
+              class="element__image"
             />
             <div class="element__container">
               <h2 class="element__heading">Карачаево-Черкессия</h2>
-              <button type="button" class="element__group"></button>
+              <button type="button" class="element__button"></button>
             </div>
           </article>
         </section>
@@ -116,28 +116,29 @@
       </footer>
     </div>
 
-    <section class="popup popup_opened">
+    <div class="popup popup_opened">
       <div class="popup__content">
         <button type="button" class="popup__close"></button>
+        <h2 class="popup__heading">Редактировать профиль</h2>
         <form name="form" class="popup__form">
-          <h2 class="popup__heading">Редактировать профиль</h2>
+         
           <input
             type="text"
             id="username"
             name="username"
             placeholder="Жак-Ив Кусто"
-            class="popup__field1"
+            class="popup__field"
           />
           <input
             type="text"
             id="user-speciality"
             name="user-speciality"
             placeholder="Исследователь океана"
-            class="popup__field2"
+            class="popup__field popup__field_theme_speciality"
           />
-          <button type="button" class="popup__save">Сохранить</button>
+          <button type="submit" class="popup__save">Сохранить</button>
         </form>
       </div>
-    </section>
+    </div>
   </body>
 </html>

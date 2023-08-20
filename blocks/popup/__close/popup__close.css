@@ -16,3 +16,14 @@
   transition: opacity 0.3s; /* Добавляем плавный переход для изменения прозрачности */
   opacity: 0.6; /* Изменяем прозрачность при наведении */
 }
+
+
+@media screen and (max-width: 590px) {
+  .popup__close {
+    background-image: url(../../../images/Close\ Icon3.svg);
+    width: 20px;
+    height: 20px;
+    top: -36px;
+    left: calc(282px - 20px);
+  }
+}

@@ -1,6 +1,6 @@
-.element__group {
-  max-width: 22px;
-  max-height: 19px;
+.element__button {
+  width: 22px;
+  height: 19px;
   background-color: white;
   border: 0;
   background-image: url(../../../images/Group.svg);
@@ -12,12 +12,12 @@
   position: relative;
 }
 
-.element__group:hover {
+.element__button:hover {
   transition: opacity 0.3s; /* Добавляем плавный переход для изменения прозрачности */
   opacity: 0.5; /* Изменяем прозрачность при наведении */
 }
 
-.element__group:active {
+.element__button:active {
   background-image: url(../../../images/Union.svg);
   fill: black;
   opacity: 1; /* Изменяем прозрачность при наведении */

@@ -1,4 +1,4 @@
-.popup__field2 {
+.popup__field_theme_speciality {
   width: 358px;
   height: 14px;
   flex-shrink: 0;
@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-width: 590px) {
-  .popup__field2 {
+  .popup__field_theme_speciality {
     width: 238px;
     height: 14px;
   }

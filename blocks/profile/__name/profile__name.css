@@ -9,7 +9,8 @@
   white-space: nowrap;
   overflow: hidden;
   margin: 0;
-  max-width: 500px;
+  max-width: 305px;
+  flex-shrink: 0;
 }
 
 @media screen and (max-width: 945px) {
