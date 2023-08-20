@@ -1,8 +1,6 @@
 .popup__heading {
   color: black;
-  font-family: Inter;
   max-width: 330px;
-  max-height: 23px;
   flex-shrink: 0;
   font-size: 24px;
   font-style: normal;
