@@ -147,3 +147,35 @@ closeNewButton.addEventListener('click', closeNewPopup);
 
 
 //4444444444444
+
+// Получаем кнопку "принять"
+const submitButton = document.querySelector('.popup__save_place');
+
+// Контейнер, куда будут добавляться элементы
+const itemsContainer = document.querySelector('.elements');
+
+function addItem() {
+  const nameInput = document.getElementById('new-place-name');
+  const urlInput = document.getElementById('new-place-url');
+
+  const templateContent = document.querySelector('#place-template').content.cloneNode(true);
+
+  const elementHeading = templateContent.querySelector('.element__heading');
+  const elementImage = templateContent.querySelector('.element__image');
+
+  elementHeading.textContent = nameInput.value;
+  elementImage.src = urlInput.value;
+  
+  event.preventDefault(); // отмена перезагрузки страницы
+  itemsContainer.insertBefore(templateContent, itemsContainer.firstChild);
+  closeNewPopup(); //функция закрытия
+ 
+}
+
+submitButton.addEventListener('click', addItem);
+
+
+
+
+//55555555555555
+

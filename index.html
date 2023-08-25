@@ -151,7 +151,7 @@
             id="new-place-name"
             name="new-place-name"
             placeholder="Название"
-            class="popup__field "
+            class="popup__field"
           />
           <input
           type="text"
@@ -161,11 +161,24 @@
           class="popup__field popup__field_theme_speciality"
         />
           
-          <button type="submit" class="popup__save">Добавить</button>
+          <button type="submit" class="popup__save_place">Добавить</button>
         </form>
       </div>
     </div>
-    
+
+    <template id="place-template">
+      <article class="element">
+        <img
+          src="./images/kirill-pershin-1088404-unsplash.jpg"
+          alt="Карачаевск"
+          class="element__image"
+        />
+        <div class="element__container">
+          <h2 class="element__heading">Карачаевск</h2>
+          <button type="button" class="element__button"></button>
+        </div>
+      </article>
+    </template>
 
   </body>
 
