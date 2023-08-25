@@ -128,13 +128,13 @@ const imgUrl = document.querySelector('#new-place-url');
 function openNewPopup() {
     
 
-    popupNew.classList.add('popup_opened');
+    popupNew.classList.add('popup_new-place_opened');
 
 }
 
 // Функция для закрытия попапа
 function closeNewPopup() {
-    popupNew.classList.remove('popup_new-place');
+    popupNew.classList.remove('popup_new-place_opened');
 }
 
 // Слушаем клик на кнопке "Редактировать профиль" и открываем попап
@@ -142,3 +142,8 @@ addButton.addEventListener('click', openNewPopup);
 
 // Слушаем клик на кнопке закрытия попапа и закрываем его
 closeNewButton.addEventListener('click', closeNewPopup);
+
+
+
+
+//4444444444444

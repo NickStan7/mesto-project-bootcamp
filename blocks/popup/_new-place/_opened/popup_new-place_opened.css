@@ -1,8 +1,4 @@
-.popup_opened {
-  
-
+.popup_new-place_opened {
   opacity: 1; /* При открытии, делаем попап полностью видимым */
   pointer-events: auto;
-  
-
 }
