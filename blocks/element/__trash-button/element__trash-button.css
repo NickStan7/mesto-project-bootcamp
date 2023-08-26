@@ -1,19 +1,21 @@
-.element__button {
-  width: 25px;
+.element__trash-button {
+  width: 18px;
   height: 19px;
-  background-color: white;
+  background-color: transparent;
   border: 0;
-  background-image: url(../../../images/Group.svg);
+  background-image: url(../../../images/Trash.svg);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
   align-self: center;
-  margin: 5px 5px 1px 0;
-  position: relative;
-  
+  margin: 0;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
-.element__button:hover {
+.element__trash-button:hover {
   transition: opacity 0.3s; /* Добавляем плавный переход для изменения прозрачности */
   opacity: 0.5; /* Изменяем прозрачность при наведении */
 }
+
