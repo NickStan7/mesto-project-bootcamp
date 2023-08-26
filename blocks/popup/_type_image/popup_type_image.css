@@ -1,4 +1,4 @@
-.popup {
+.popup_type_image {
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -8,6 +8,5 @@
   height: 100%;
   opacity: 0; /* Начальная непрозрачность */
   pointer-events: none; /* Пока попап невидим, он не реагирует на события мыши */
-
-  
+ 
 }
