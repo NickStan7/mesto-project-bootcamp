@@ -1,6 +1,9 @@
 .popup__image {
-  max-height: 75vh;
-  max-width: 75vw;
-  width: auto;
-  height: 75vw;
+  position: relative;
+  max-height: 75vh; /* Максимальная высота вьюпорта */
+  max-width: 75vw; /* Максимальная ширина вьюпорта */
+  width: auto; /* Автоматическая ширина для поддержки соотношения сторон */
+  height: auto;
+
 }
+

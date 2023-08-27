@@ -22,8 +22,6 @@ const job = document.querySelector("#user-speciality");
 
 // Функция для открытия попапа
 function openPopup() {
-
-
   // Получите значение из атрибута textContent элементов profile__name и profile__speciality
   const nameValue = profileName.textContent;
   const jobValue = profileSpeciality.textContent;
@@ -56,7 +54,6 @@ const nameInput = document.querySelector("#username");
 const jobInput = document.querySelector("#user-speciality");
 // Обработчик «отправки» формы, хотя пока
 // она никуда отправляться не будет
-
 
 function handleFormSubmit(evt) {
   evt.preventDefault();
@@ -108,7 +105,6 @@ const elementsContainer = document.querySelector(".elements");
 
 // Функция для создания карточки
 function createCard(name, link) {
-
   const cardTemplate = document.querySelector("#place-template").content;
   const cardElement = cardTemplate.cloneNode(true);
 
@@ -122,6 +118,11 @@ function createCard(name, link) {
 
   const trashButton = cardElement.querySelector(".element__trash-button");
   trashButton.addEventListener("click", removeCard);
+
+  const clickImages = cardElement.querySelectorAll(".element__image");
+  clickImages.forEach((clickImage) => {
+    clickImage.addEventListener("click", openImagePopup); // Добавляем слушатель для каждого изображения
+  });
 
   return cardElement; // Возвращаем готовую карточку
 }
@@ -142,7 +143,6 @@ function removeCard(event) {
 initialCards.forEach((card) => {
   const newCard = createCard(card.name, card.link); // Создаем карточку
   elementsContainer.appendChild(newCard); // Вставляем карточку в контейнер
-  
 });
 
 //33333333333
@@ -159,6 +159,8 @@ const closeNewButton = popupNew.querySelector(".popup__close");
 // Получаем инпуты
 const namePlace = document.querySelector("#new-place-name");
 const imgUrl = document.querySelector("#new-place-url");
+const nameValue = namePlace.value; // Получаем значение из поля ввода имени
+const urlValue = imgUrl.value; // Получаем значение из поля ввода UR
 
 // Функция для открытия попапа
 function openNewPopup() {
@@ -185,52 +187,15 @@ const submitButton = document.querySelector(".popup__save_new-place");
 const itemsContainer = document.querySelector(".elements");
 
 function addItem() {
+  event.preventDefault(); // Предотвращаем перезагрузку страницы
 
+  const nameValue = namePlace.value; // Получаем значение из поля ввода имени
+  const urlValue = imgUrl.value; // Получаем значение из поля ввода URL
 
-  const templateContent = document
-    .querySelector("#place-template")
-    .content.cloneNode(true);
+  const newCard = createCard(nameValue, urlValue); // Создаем новую карточку
+  elementsContainer.insertBefore(newCard, elementsContainer.firstChild);
 
-  const elementHeading = templateContent.querySelector(".element__heading");
-  const elementImage = templateContent.querySelector(".element__image");
-
-  elementHeading.textContent = nameInputPlace.value;
-  elementImage.src = urlInputPlace.value;
-
-  event.preventDefault(); // отмена перезагрузки страницы
-  itemsContainer.insertBefore(templateContent, itemsContainer.firstChild);
-
-  const likeButtons = document.querySelectorAll(".element__button");
-
-  function like() {
-    const likeButton = event.target;
-    likeButton.classList.toggle("element__button_theme_dark");
-  }
-
-  likeButtons.forEach((button) => {
-    button.addEventListener("click", like);
-  });
-
-  //666666666
-
-  // Получаем кнопку "удалить карточку"
-
-  const trashButtons = document.querySelectorAll(".element__trash-button");
-
-  function removeItem(event) {
-    const button = event.target;
-    const card = button.closest(".element"); // Находим ближайший элемент с классом .element
-    if (card) {
-      card.remove(); // Удаляем карточку
-    }
-  }
-
-  // Добавляем обработчик события для каждой кнопки удаления
-  trashButtons.forEach((button) => {
-    button.addEventListener("click", removeItem);
-  });
-
-  closeNewPopup(); //функция закрытия
+  closeNewPopup(); // Закрываем всплывающее окно
 }
 
 submitButton.addEventListener("click", addItem);
@@ -243,10 +208,6 @@ function like() {
   const likeButton = event.target;
   likeButton.classList.toggle("element__button_theme_dark");
 }
-
-likeButtons.forEach((button) => {
-  button.addEventListener("click", like);
-});
 
 //666666666
 
@@ -262,24 +223,19 @@ function removeItem(event) {
   }
 }
 
-// Добавляем обработчик события для каждой кнопки удаления
-trashButtons.forEach((button) => {
-  button.addEventListener("click", removeItem);
-});
-
 //777777777777
 
 // Получаем изображение "добавить"
-const clickImages = document.querySelectorAll(".element__image");
 
-// Получаем изображение "subtitle"
-const popupSubtitle = document.querySelectorAll(".popup__subtitle");
-console.log(popupSubtitle);
 // Получаем попап
 const popupImage = document.querySelector(".popup_type_image");
 
 // Получаем кнопку закрытия попапа
 const closeImage = popupImage.querySelector(".popup__close");
+
+// Получаем изображение "subtitle"
+const popupSubtitle = document.querySelectorAll(".popup__subtitle");
+console.log(popupSubtitle);
 
 // Получаем инпуты
 const popupImageImg = popupImage.querySelector(".popup__image"); // Находим элемент <img> внутри попапа
@@ -292,16 +248,11 @@ function openImagePopup(event) {
 
   popupImageImg.src = imageUrl;
 
-  popupSubtitle.forEach((subtitle) => {
-    subtitle.textContent = imageAlt; // Устанавливаем текст для каждого элемента из коллекции
-  });
+  const popupSubtitle = popupImage.querySelector(".popup__subtitle");
+  popupSubtitle.textContent = imageAlt;
 
   popupImage.classList.add("popup_type_image_opened");
 }
-
-clickImages.forEach((clickImage) => {
-  clickImage.addEventListener("click", openImagePopup); // Добавляем слушатель для каждого изображения
-});
 
 // Функция для закрытия попапа
 function closeImagePopup() {
