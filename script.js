@@ -1,3 +1,5 @@
+// Находим форму в DOM
+const formName = document.forms.name;
 // Получаем элементы, куда должны быть вставлены значения полей
 const profileName = document.querySelector(".profile__name");
 const profileSpeciality = document.querySelector(".profile__speciality");
@@ -13,12 +15,15 @@ const openButton = document.querySelector(".profile__edit-button");
 // Получаем попап
 const profilePopup = document.querySelector(".profile-popup");
 
+
 // Получаем кнопку закрытия попапа
-const closeButton = profilePopup.querySelector(".popup__close");
+const closeButton = document.querySelector(".popup__close");
+
 
 // Получаем инпуты
-const name = document.querySelector("#username");
-const job = document.querySelector("#user-speciality");
+const nameInput = formName.elements.username;
+const jobInput = formName.elements.speciality;
+
 
 // Функция для открытия попапа
 function openPopup() {
@@ -26,6 +31,7 @@ function openPopup() {
   const nameValue = profileName.textContent;
   const jobValue = profileSpeciality.textContent;
 
+  nameInput.focus();
   // Вставьте новые значения в инпуты
   nameInput.value = nameValue;
   jobInput.value = jobValue;
@@ -46,17 +52,13 @@ closeButton.addEventListener("click", closePopup);
 
 //111111(222222)
 
-// Находим форму в DOM
-const formElement = document.querySelector(".popup__form");
 
-// Находим поля формы в DOM
-const nameInput = document.querySelector("#username");
-const jobInput = document.querySelector("#user-speciality");
+
+
 // Обработчик «отправки» формы, хотя пока
 // она никуда отправляться не будет
 
 function handleFormSubmit(evt) {
-  evt.preventDefault();
 
   // Получите значение полей jobInput и nameInput из свойства value
   const nameValue = nameInput.value;
@@ -70,7 +72,13 @@ function handleFormSubmit(evt) {
   closePopup();
 }
 
-formElement.addEventListener("submit", handleFormSubmit);
+formName.addEventListener('submit', function (evt) {
+  // отменим стандартное поведение
+  evt.preventDefault();
+
+  // вызываем функцию
+  handleFormSubmit(evt)
+}); 
 
 //22222222222
 
@@ -165,6 +173,7 @@ const urlValue = imgUrl.value; // Получаем значение из пол�
 // Функция для открытия попапа
 function openNewPopup() {
   popupNew.classList.add("popup_new-place_opened");
+  namePlace.focus();
 }
 
 // Функция для закрытия попапа
@@ -180,8 +189,6 @@ closeNewButton.addEventListener("click", closeNewPopup);
 
 //4444444444444
 
-// Получаем кнопку "принять"
-const submitButton = document.querySelector(".popup__save_new-place");
 
 // Контейнер, куда будут добавляться элементы
 const itemsContainer = document.querySelector(".elements");
@@ -198,7 +205,9 @@ function addItem() {
   closeNewPopup(); // Закрываем всплывающее окно
 }
 
-submitButton.addEventListener("click", addItem);
+const formPlace = document.forms.place;
+
+formPlace.addEventListener("submit", addItem);
 
 //55555555555555
 
@@ -261,3 +270,9 @@ function closeImagePopup() {
 
 // Слушаем клик на кнопке закрытия попапа и закрываем его
 closeImage.addEventListener("click", closeImagePopup);
+
+popupNew.addEventListener("keydown", function(evt) {
+  if (evt.key === "Escape") {
+    popupNew.classList.remove("popup_opened");
+  }
+});

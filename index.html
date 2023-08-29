@@ -28,12 +28,12 @@
             <div class="profile__heading">
               <h1 class="profile__name">Жак-Ив Кусто</h1>
 
-              <button type="button" class="profile__edit-button"></button>
+              <button type="button" class="profile__edit-button" ></button>
             </div>
 
             <p class="profile__speciality">Исследователь океана</p>
           </div>
-          <button type="button" class="profile__add-button"></button>
+          <button type="button" class="profile__add-button" ></button>
         </section>
 
         <section class="elements" aria-label="Галлерея">
@@ -47,11 +47,11 @@
     </div>
 
     
-    <div class="popup profile-popup">
+    <div class="popup profile-popup" >
       <div class="popup__content">
         <button type="button" class="popup__close"></button>
         <h2 class="popup__heading">Редактировать профиль</h2>
-        <form name="form" class="popup__form">
+        <form name="name" class="popup__form">
           <input
             type="text"
             id="username"
@@ -61,8 +61,8 @@
           />
           <input
             type="text"
-            id="user-speciality"
-            name="user-speciality"
+            id="speciality"
+            name="speciality"
             placeholder="Исследователь океана"
             class="popup__field popup__field_theme_speciality"
           />
@@ -75,7 +75,7 @@
       <div class="popup__content">
         <button type="button" class="popup__close"></button>
         <h2 class="popup__heading">Новое место</h2>
-        <form name="form" class="popup__form">
+        <form name="place" class="popup__form">
           <input
             type="text"
             id="new-place-name"
