@@ -1,7 +1,7 @@
 .popup__close-image {
-  position: absolute;
-  top: -40px; /* Отступ сверху на 8 пикселей */
-  left: 438px; /* Отступ слева на 8 пикселей */
+position: relative; /* Относительное позиционирование */
+  margin-top: -8px; /* Отступ сверху на -8 пикселей */
+  margin-right: 8px; /* Отступ справа на 8 пикселей */
   width: 32px;
   height: 32px;
   background-color: rgba(0, 0, 0, 0);
