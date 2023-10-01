@@ -106,4 +106,4 @@
 
 Для обратной связи и улучшений можете обратиться на почту: 
 
-nktstankovic@gmail.com 
+nktstankovic@gmail.com Nikita Stanković
